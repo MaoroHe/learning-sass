@@ -1,6 +1,90 @@
-body {
-  background-color: #F4F27E;
+* {
+  font-family: "Exo 2", sans-serif;
 }
-body h1 {
-  font-size: 50px;
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+html body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .container__header {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  position: relative;
+  overflow-x: hidden;
+  transition: all 550ms linear;
+}
+.container .container__header .header__img {
+  width: 100%;
+  height: 100%;
+  transition: all 550ms linear;
+}
+.container .container__contain {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 36%;
+  height: 99px;
+  padding: 1.9%;
+  overflow: hidden;
+  font-size: 17px;
+  margin-top: 35%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: white;
+  transition: all 500ms linear;
+}
+.container h1 {
+  margin-bottom: 2px;
+  margin-top: 5px;
+  font-size: 45px;
+  transition: all 500ms linear;
+}
+.container h2 {
+  margin-top: 2px;
+  margin-bottom: 20px;
+  font-size: 38px;
+  color: #435585;
+  transition: all 500ms linear;
+}
+.container p {
+  display: none;
+  font-size: 15px;
+  transition: all 550ms linear;
+}
+
+.container:hover .container__header {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container:hover .container__header .header__img {
+  filter: opacity(75%);
+  transform: scale(1.1);
+}
+.container:hover .container__contain {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 300px;
+  padding-bottom: 10px;
+  margin-top: 26%;
+}
+.container:hover .container__contain h1 {
+  font-size: 30px;
+}
+.container:hover .container__contain h2 {
+  font-size: 22px;
+}
+.container:hover .container__contain p {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
